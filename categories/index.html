@@ -7,13 +7,13 @@
   <meta name="description" content="categories | Hexo-Jims&#39;blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+<meta property="og:title" content="categories">
+<meta property="og:url" content="http://yoursite.com/categories/index.html">
 <meta property="og:site_name" content="Hexo-Jims&#39;blog">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-30T17:07:03.811Z">
+<meta property="og:updated_time" content="2019-08-30T17:13:51.477Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
+<meta name="twitter:title" content="categories">
 
 
 <link rel="icon" href="/img/love.jpg">
@@ -112,7 +112,7 @@
     
         
             
-            <li><div data-rel="帮助">帮助<small>(2)</small></div>
+            <li><div data-rel="首页">首页<small>(0)</small></div>
                 
             </li>
             
@@ -120,7 +120,7 @@
     
         
             
-            <li><div data-rel="首页">首页<small>(1)</small></div>
+            <li><div data-rel="帮助">帮助<small>(3)</small></div>
                 
             </li>
             
@@ -193,19 +193,19 @@
         </a>
         
         <a  class="帮助 "
-           href="/2019/08/30/如何使用Github搭建个人博客/"
+           href="/2019/08/30/Hexo使用说明/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Hexo使用说明">Hexo使用说明</span>
+            <span class="post-date" title="2019-08-30 21:49:58">2019/08/30</span>
+        </a>
+        
+        <a  class="帮助 "
+           href="/2019/08/30/使用Github搭建个人博客/"
            data-tag="博客"
            data-author="" >
             <span class="post-title" title="如何使用Github搭建个人博客">如何使用Github搭建个人博客</span>
             <span class="post-date" title="2019-08-30 22:17:09">2019/08/30</span>
-        </a>
-        
-        <a  class="首页 "
-           href="/2019/08/30/hello-world/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="Hello World">Hello World</span>
-            <span class="post-date" title="2019-08-30 21:49:58">2019/08/30</span>
         </a>
         
     </nav>
@@ -250,6 +250,17 @@
         </span>
         
         
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
     </div>
     
     <div class="toc-ref">
@@ -277,6 +288,27 @@
 
 
 
+
+
+    <div id="comments"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script type="text/javascript">
+    $.getScript('/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: '6c65b7dd1994c2822023',
+            clientSecret: '82add2f0336b097c3fd8e464efa82659a9f609e3',
+            repo: 'wangjw0811.github.io',
+            owner: 'wangjw0811',
+            admin: ['wangjw0811'],
+            id: decodeURI(location.pathname),
+            distractionFreeMode: 'true',
+            language: 'zh-CN',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
+</script>
 
 
 
@@ -314,7 +346,7 @@
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#Hexo','#博客',],
+            'data': ['@阿杰','@小马哥','#Hexo','#博客',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
