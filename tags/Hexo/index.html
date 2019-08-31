@@ -112,14 +112,6 @@
     
         
             
-            <li><div data-rel="首页">首页<small>(0)</small></div>
-                
-            </li>
-            
-        
-    
-        
-            
             <li><div data-rel="帮助">帮助<small>(3)</small></div>
                 
             </li>
@@ -174,23 +166,11 @@
         <a href="javascript:" class="color5">Hexo</a>
     </li>
     
-    <li class="article-tag-list-item">
-        <a href="javascript:" class="color3">博客</a>
-    </li>
-    
     <div class="clearfix"></div>
 </div>
 
     
     <nav id="title-list-nav">
-        
-        <a  class="帮助 "
-           href="/2019/08/30/使用Hexo快速构建个人博客/"
-           data-tag="Hexo"
-           data-author="" >
-            <span class="post-title" title="使用Hexo快速构建个人博客">使用Hexo快速构建个人博客</span>
-            <span class="post-date" title="2019-08-30 22:06:33">2019/08/30</span>
-        </a>
         
         <a  class="帮助 "
            href="/2019/08/30/Hexo使用说明/"
@@ -208,6 +188,14 @@
             <span class="post-date" title="2019-08-30 22:17:09">2019/08/30</span>
         </a>
         
+        <a  class="帮助 "
+           href="/2019/08/30/使用Hexo快速构建个人博客/"
+           data-tag="Hexo"
+           data-author="" >
+            <span class="post-title" title="使用Hexo快速构建个人博客">使用Hexo快速构建个人博客</span>
+            <span class="post-date" title="2019-08-30 22:06:33">2019/08/30</span>
+        </a>
+        
     </nav>
 </div>
     </div>
@@ -223,7 +211,7 @@
         <article class="index">
             <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Why-Blog"><span class="toc-text">Why Blog</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#对博客的理解"><span class="toc-text">对博客的理解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于叶落阁"><span class="toc-text">关于叶落阁</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#博客平台"><span class="toc-text">博客平台</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Why-Blog"><span class="toc-text">Why Blog</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#对博客的理解"><span class="toc-text">对博客的理解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于BLOG"><span class="toc-text">关于BLOG</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#博客平台"><span class="toc-text">博客平台</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -248,9 +236,8 @@
 </blockquote>
 <p>我们每个人的在网络上产生的数据越来越多，这些信息是我们在互联网上存在过的痕迹，值得我们认真对待。但是它们被分散分布在各个网站上。很多时候我们很难将它们聚合在一起，而且各个网站的信息排布方式也没有办法自由控制，所以我们需要一个可以由自己主宰的空间——博客。</p>
 <p>通过博客，我们可以记录自己的生活和成长的轨迹。它不像 Twitter 那样碎片化，也不像 Facebook 那样关系化，它是私人的空间。</p>
-<h2 id="关于叶落阁"><a href="#关于叶落阁" class="headerlink" title="关于叶落阁"></a>关于叶落阁</h2><p><strong>叶落阁</strong> 是阿杰（杨玉杰）的个人站。</p>
-<p>到目前为止已经写了<code class="article_number"></code>篇文章，</p>
-<p> 共<code class="site_word_count"></code>字。</p>
+<h2 id="关于BLOG"><a href="#关于BLOG" class="headerlink" title="关于BLOG"></a>关于BLOG</h2><p>个人站点</p>
+<p>到目前为止已经写了<code class="article_number"></code>篇文章， 共<code class="site_word_count"></code>字。</p>
 <p>本站访问人数：<code class="site_uv"></code>人次 ， 访问量：<code class="site_pv"></code>次</p>
 <h2 id="博客平台"><a href="#博客平台" class="headerlink" title="博客平台"></a>博客平台</h2><p>这个博客通过 <a href="https://hexo.io/">Hexo</a> 生成，部署在 <a href="https://pages.github.com/">GitHub Pages</a>，主题 <a href="https://github.com/yelog/hexo-theme-3-hexo">3-hexo</a> 已经在github上开源</p>
 <p>主要功能：</p>
@@ -312,7 +299,7 @@
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['@阿杰','@小马哥','#Hexo','#博客',],
+            'data': ['@阿杰','@小马哥','#Hexo',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
